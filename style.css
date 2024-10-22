@@ -5,6 +5,7 @@
     list-style-type: none;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
 
 
 
@@ -100,7 +101,8 @@ button {
 .headingimg{
                 width:80px ; 
                 height:80px;
-                border-radius:80px ;
+                border-radius:50%;
+                border:5px solid  blue ;
 }
 header p{
            padding:10px ;
@@ -204,4 +206,16 @@ header p{
              background-color:rgb(0, 110, 255);
              padding:5px;
              border-radius:3px;
+}
+.class-notes{
+    position: relative;
+}
+.class2-notes{top: 100%;
+    position: absolute;
+    display:none;
+}
+.class-notes:hover .class2-notes{
+    display: block;
+    background-color: orange;
+    color: white;
 }    
